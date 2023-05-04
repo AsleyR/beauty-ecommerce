@@ -39,7 +39,8 @@ const Footer = () => {
                 <div className="flex flex-col gap-2 text-sm lg:text-base tracking-wide font-light">
                     <h1 className="font-medium text-black text-base tracking-widest">ABOUT ESQUIDO</h1>
                     <p>
-                        Esqido is a direct to consumer beauty brand, offering performance cosmetics that's made with integrity
+                        {/* This is because lint is telling me that the character ' can be escaped or something */}
+                        {`Esqido is a direct to consumer beauty brand, offering performance cosmetics that's made with integrity`}
                     </p>
                     <p>Questions? <span className="underline hover:text-beige transition-all cursor-pointer">support@esqido.com</span></p>
                 </div>
