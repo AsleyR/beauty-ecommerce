@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 import { CustomerReview } from "@/app/libs/types/Review.types";
 import HappyCustomerCard from "../customer-reviews/happy-customers/HappyCustomerCard";
-import { NavigationOptions, SwiperModule } from "swiper/types";
+import { NavigationOptions } from "swiper/types";
 
 interface CustomerReviewCarouselProps {
     reviews: CustomerReview[],
@@ -18,10 +18,10 @@ interface CustomerReviewCarouselProps {
 }
 
 const CustomerReviewCarousel = ({ reviews, slidesPerView, navigation }: CustomerReviewCarouselProps) => {
-    // const modulesProps: SwiperModule[] = navigation === true && navigation !== undefined ? [Pagination, Navigation] : [Pagination]
-    console.log(navigation)
-    const navigationProps: NavigationOptions = navigation ? { "enabled": true } : { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
-    console.log(navigationProps)
+    const navigationProps: NavigationOptions = navigation ?
+        { "enabled": true }
+        :
+        { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
 
     return (
         <Swiper
