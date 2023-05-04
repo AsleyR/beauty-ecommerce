@@ -1,5 +1,8 @@
 "use client"
 
+import Link from "next/link"
+import dynamic from "next/dynamic"
+
 import SearchIcon from "../icons/SearchIcon"
 import UserIcon from "../icons/UserIcon"
 import CartIcon from "../icons/CartIcon"
@@ -7,9 +10,14 @@ import Logo from "./Logo"
 import MobileNavLinks from "./MobileNavLinks"
 import { createContext, useState } from "react"
 import { MobileSideMenu, MobileSideMenuType } from "../../(libs)/context/MobileSideMenuContext"
-import MobileNavSideMenu from "./MobileNavSideMenu"
-import Link from "next/link"
-import NavLinks from "./NavLinks"
+
+const MobileNavSideMenuDynamicImport = dynamic(() =>
+    import('./MobileNavSideMenu')
+)
+
+const NavLinksDynamicComponent = dynamic(() =>
+    import('./NavLinks')
+)
 
 export const MobileSideMenuContext = createContext<MobileSideMenuType | null>(null)
 
@@ -26,7 +34,7 @@ const Navbar = () => {
                         <Logo />
                     </div>
                     <MobileNavLinks />
-                    <NavLinks />
+                    <NavLinksDynamicComponent />
                     <div className="order-last lg:order-none justify-self-end flex items-center align-middle gap-5">
                         <SearchIcon className="hidden lg:block hover:cursor-pointer hover:text-gray-500" />
                         <Link href={'/login'}>
@@ -36,7 +44,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <MobileNavSideMenu />
+            <MobileNavSideMenuDynamicImport />
         </MobileSideMenuContext.Provider>
     )
 }
