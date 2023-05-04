@@ -11,11 +11,11 @@ import HappyConstumersContainer from "./(components)/customer-reviews/happy-cust
 const HeroImage = () => {
   return (
     <div className="h-full">
-      <Image
+      <Image priority
         className="hidden md:block w-full h-full"
         width={1000} height={1000}
         src={'/images/hero-bg.webp'} alt="" />
-      <Image
+      <Image priority
         className="block md:hidden w-full h-full"
         width={500} height={500}
         src={'/images/hero-bg-mobile.webp'} alt="" />
