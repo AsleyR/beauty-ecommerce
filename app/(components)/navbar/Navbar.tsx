@@ -6,28 +6,10 @@ import CartIcon from "../icons/CartIcon"
 import Logo from "./Logo"
 import MobileNavLinks from "./MobileNavLinks"
 import { createContext, useState } from "react"
-import { MobileSideMenu, MobileSideMenuType } from "../../libs/context/MobileSideMenuContext"
+import { MobileSideMenu, MobileSideMenuType } from "../../(libs)/context/MobileSideMenuContext"
 import MobileNavSideMenu from "./MobileNavSideMenu"
 import Link from "next/link"
-
-const NavLinks = () => {
-    return (
-        <ul className="hidden lg:flex w-full justify-center text-center font-base text-sm gap-8 tracking-widest">
-            <li className="hover:text-beige cursor-pointer">
-                SHOP
-            </li>
-            <li className="hover:text-beige cursor-pointer">
-                OUR STORY
-            </li>
-            <li className="hover:text-beige cursor-pointer">
-                REVIEWS
-            </li>
-            <li className="hover:text-beige cursor-pointer">
-                REWARDS
-            </li>
-        </ul>
-    )
-}
+import NavLinks from "./NavLinks"
 
 export const MobileSideMenuContext = createContext<MobileSideMenuType | null>(null)
 
