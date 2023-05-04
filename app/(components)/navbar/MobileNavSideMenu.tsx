@@ -27,9 +27,9 @@ const MobileNavSideMenu = () => {
     return (
         <>
             <div className={`
-            absolute lg:hidden top-0 bottom-0 px-5
+            fixed overflow-hidden lg:hidden top-0 bottom-0 px-5
             ${mobileSideMenu ? "left-0" : "-left-[30rem]"} 
-            w-[20rem] z-20 bg-white drop-shadow-md transition-all
+            w-[20rem] z-30 bg-white drop-shadow-md transition-all
             duration-[300ms]
             `}>
                 <div className="sticky inset-y-0 py-5">
@@ -59,7 +59,7 @@ const MobileNavSideMenu = () => {
                 </div>
             </div>
             <div onClick={() => setMobileSideMenu(false)}
-                className={`absolute lg:hidden inset-0 ${mobileSideMenu ? "block" : "hidden"} bg-black/40 z-10`}></div>
+                className={`overflow-hidden lg:hidden inset-0 ${mobileSideMenu ? "fixed" : "hidden"} bg-black/40 z-20`}></div>
         </>
     )
 }
