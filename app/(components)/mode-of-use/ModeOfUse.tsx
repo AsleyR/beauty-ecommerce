@@ -18,7 +18,7 @@ const ModeOfUse = ({ image, content, imgDirection }: ModeOfUseProps) => {
     return (
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 py-5 px-mobilex lg:px-normalx ${imgDirection === "left" ? "bg-inherit" : "bg-bggray1"}`}>
             <div className={`${imgDirection === "left" ? "order-last lg:order-first" : "order-last"}`}>
-                <Image className="w-[35rem] h-[35rem]"
+                <Image className="w-full h-full"
                     width={200} height={200} src={image} alt={`${content.section}-gif`} />
             </div>
             <div className="text-graytext flex flex-col gap-5 justify-center">
