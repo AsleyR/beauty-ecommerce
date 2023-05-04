@@ -7,7 +7,7 @@ const ProfessionalReviewCard = ({ data }: { data: ProfessionalReviewCardProps })
             <div className="flex gap-5 items-center align-middle">
                 <div className="rounded-full h-[4rem] w-[4rem]">
                     <Image className="w-full h-full object-cover rounded-full"
-                        width={400} height={400} src={data.image} alt={`${data.name}-photo`} />
+                        width={200} height={200} src={data.image} alt={`${data.name}-photo`} />
                 </div>
                 <div className="grid grid-cols-auto text-left">
                     <h1 className="font-bold text-black">{data.name}</h1>

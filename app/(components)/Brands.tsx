@@ -3,7 +3,7 @@ import Image from "next/image"
 const BrandLogo = ({ image }: { image: string }) => {
     return (
         <Image className="w-full h-full"
-            width={500} height={500} src={image} alt="brand-logo" />
+            width={200} height={200} src={image} alt="brand-logo" />
     )
 }
 

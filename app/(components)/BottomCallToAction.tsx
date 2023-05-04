@@ -12,7 +12,7 @@ const BottomCallToAction = () => {
             </div>
             <div className="">
                 <Image className="w-full h-full"
-                    width={2040} height={2040} src={'/images/women.webp'} alt="women-photo" />
+                    width={1000} height={1000} src={'/images/women.webp'} alt="women-photo" />
             </div>
         </div>
     )

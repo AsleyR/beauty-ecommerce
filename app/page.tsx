@@ -13,11 +13,11 @@ const HeroImage = () => {
     <div className="h-full">
       <Image
         className="hidden md:block w-full h-full"
-        width={2040} height={2040}
+        width={1000} height={1000}
         src={'/images/hero-bg.webp'} alt="" />
       <Image
         className="block md:hidden w-full h-full"
-        width={2040} height={2040}
+        width={500} height={500}
         src={'/images/hero-bg-mobile.webp'} alt="" />
     </div>
   )
