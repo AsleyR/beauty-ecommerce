@@ -1,4 +1,4 @@
-import HappyCustomer from '../../../HappyCustomer.json' assert { type: "json" }
+import HappyCustomer from '../../../../json-data/HappyCustomer.json' assert { type: "json" }
 import CustomerReviewCarousel from "../../carousel/CustomerReviewCarousel"
 
 // Import reviews - TODO: upload data to a db.
