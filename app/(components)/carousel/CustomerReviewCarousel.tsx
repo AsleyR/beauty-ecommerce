@@ -7,7 +7,7 @@ import "swiper/css"
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { CustomerReview } from "@/app/libs/types/Review.types";
+import { CustomerReview } from "@/app/(libs)/types/Review.types";
 import HappyCustomerCard from "../customer-reviews/happy-customers/HappyCustomerCard";
 import { NavigationOptions } from "swiper/types";
 

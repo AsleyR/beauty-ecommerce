@@ -2,9 +2,7 @@
 
 import { useContext } from "react"
 import { MobileSideMenuContext } from "./Navbar"
-import { MobileSideMenuType } from "@/app/libs/context/MobileSideMenuContext"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faXmark } from "@fortawesome/free-solid-svg-icons"
+import { MobileSideMenuType } from "@/app/(libs)/context/MobileSideMenuContext"
 import XMarkIcon from "../icons/XMarkIcon"
 import Link from "next/link"
 import UserIcon from "../icons/UserIcon"

@@ -1,4 +1,4 @@
-import { CustomerReview } from "@/app/libs/types/Review.types"
+import { CustomerReview } from "@/app/(libs)/types/Review.types"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
