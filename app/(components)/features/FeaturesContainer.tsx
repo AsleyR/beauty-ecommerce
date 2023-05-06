@@ -8,7 +8,7 @@ const FeaturesContainer = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <Feature
-                    image="/images/features/price-percent.avif"
+                    image="/images/features/price-percent.svg"
                     content={{
                         title: "FAIR PRICES",
                         description: "By selling directly to you from our factories, you get a high-end product at a great price."
