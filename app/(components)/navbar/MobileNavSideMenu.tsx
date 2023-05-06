@@ -2,7 +2,7 @@
 
 import { useContext } from "react"
 import { MobileSideMenuContext } from "./Navbar"
-import { MobileSideMenuType } from "@/app/(libs)/context/MobileSideMenuContext"
+import { MobileSideMenuType } from "@/app/(context)/MobileSideMenuContext"
 import XMarkIcon from "../icons/XMarkIcon"
 import Link from "next/link"
 import UserIcon from "../icons/UserIcon"
