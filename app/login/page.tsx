@@ -1,5 +1,5 @@
 import Footer from "../(components)/footer/Footer"
-import LoginForm from "../(components)/login-form/LoginForm"
+import LoginForm from "../(components)/form/login-form/LoginForm"
 
 const page = () => {
     return (
