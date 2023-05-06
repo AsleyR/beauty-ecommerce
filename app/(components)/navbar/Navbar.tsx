@@ -9,7 +9,7 @@ import CartIcon from "../icons/CartIcon"
 import Logo from "./Logo"
 import MobileNavLinks from "./MobileNavLinks"
 import { createContext, useState } from "react"
-import { MobileSideMenu, MobileSideMenuType } from "../../(libs)/context/MobileSideMenuContext"
+import { MobileSideMenu, MobileSideMenuType } from "../../(context)/MobileSideMenuContext"
 
 const MobileNavSideMenuDynamicImport = dynamic(() =>
     import('./MobileNavSideMenu')
