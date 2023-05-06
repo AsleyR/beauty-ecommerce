@@ -1,9 +1,4 @@
 import Link from "next/link"
-import FacebookIcon from "../icons/FacebookIcon"
-import TwitterIcon from "../icons/TwitterIcon"
-import PinterestIcon from "../icons/PinterestIcon"
-import InstagramIcon from "../icons/InstagramIcon"
-import EmailIcon from "../icons/EmailIcon"
 import EmailForm from "./FooterEmailForm"
 import AmericanExpressIcon from "../icons/payment/AmericanExpress"
 import ApplePayIcon from "../icons/payment/ApplePayIcon"
@@ -14,23 +9,9 @@ import MasterCardIcon from "../icons/payment/MasterCardIcon"
 import PayPalIcon from "../icons/payment/PayPalIcon"
 import ShopPayIcon from "../icons/payment/ShopPayIcon"
 import VisaIcon from "../icons/payment/VisaIcon"
-
-const FooterLink = ({ text, link }: { text: string, link?: string }) => {
-    if (!link) {
-        link = "/"
-    }
-
-    return (
-        <Link className="hover:text-beige transition-all duration-75"
-            href={link}>{text}</Link>
-    )
-}
-
-const FooterTitle = ({ text, className }: { text: string, className?: string }) => {
-    return (
-        <h1 className={`font-medium text-black text-base tracking-wides ${className}`}>{text}</h1>
-    )
-}
+import FooterSocials from "./FooterSocials"
+import FooterLink from "./FooterLink"
+import FooterTitle from "./FooterTitle"
 
 const Footer = () => {
     return (
@@ -64,13 +45,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                     <FooterTitle text="FOLLOW US" />
-                    <div className="flex gap-2">
-                        <FacebookIcon />
-                        <TwitterIcon />
-                        <PinterestIcon />
-                        <InstagramIcon />
-                        <EmailIcon />
-                    </div>
+                    <FooterSocials />
                 </div>
                 <div className="flex flex-col gap-2">
                     <FooterTitle text="STAY IN THE LOOP" />
@@ -87,9 +62,9 @@ const Footer = () => {
                     <p className="">Copyright © 2023 ESQIDO.</p>
                     <ul className="flex gap-4">
                         <Link className="hover:text-beige duration-150"
-                            href={'/terms-of-service'}>Terms of Service</Link>
+                            href={'/'}>Terms of Service</Link>
                         <Link className="hover:text-beige duration-150"
-                            href={'/privacy-policy'}>Privacy Policy</Link>
+                            href={'/'}>Privacy Policy</Link>
                     </ul>
                 </div>
                 <div className="order-first lg:order-last">
