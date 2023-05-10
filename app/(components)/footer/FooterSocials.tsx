@@ -8,7 +8,7 @@ import { FooterSocialLinkComponentProps } from "@/app/(libs)/types/index.types"
 
 const FooterSocialLink = ({ link, className, children }: FooterSocialLinkComponentProps) => {
     return (
-        <Link href={link}
+        <Link href={link || "/"}
             className={`w-8 h-8 bg-black/80 rounded-full p-[0.4rem] hover:bg-beige transition-all duration-300 ${className || ""}`}
         >
             {children}
